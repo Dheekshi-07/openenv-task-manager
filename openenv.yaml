@@ -1,0 +1,12 @@
+name: task-prioritization-env
+version: "1.0.0"
+description: AI environment for prioritizing tasks based on urgency
+entry_point: environment:TaskEnv
+
+tasks:
+  - name: easy
+    description: basic prioritization
+  - name: medium
+    description: moderate prioritization
+  - name: hard
+    description: complex prioritization≠≠
