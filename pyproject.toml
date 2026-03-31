@@ -9,5 +9,9 @@ dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
-    "pyyaml"
+    "pyyaml",
+    "openenv>=0.2.0"
 ]
+
+[project.scripts]
+server = "server.app:app"
