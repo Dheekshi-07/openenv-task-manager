@@ -1,13 +1,28 @@
-name: task-prioritization-env
-version: "1.0.0"
-description: AI environment for prioritizing tasks based on urgency
-entry_point: environment:TaskEnv
+name: openenv-task-manager
+description: Task management simulation environment
+version: 1.0.0
 
 tasks:
-  - name: easy
-    description: basic prioritization
-  - name: medium
-    description: moderate prioritization
-  - name: hard
-    description: complex prioritization≠≠
-    
+  - id: easy
+    description: Complete one task
+    reward: 0.3
+
+  - id: medium
+    description: Complete two tasks
+    reward: 0.6
+
+  - id: hard
+    description: Complete three tasks
+    reward: 1.0
+
+state:
+  type: object
+  properties:
+    tasks_completed:
+      type: integer
+
+action:
+  type: object
+  properties:
+    action:
+      type: string
