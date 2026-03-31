@@ -3,15 +3,15 @@ name = "openenv-task-manager"
 version = "0.1.0"
 description = "OpenEnv Task Manager environment"
 authors = [{ name = "Dheekshika" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 
 dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
     "pyyaml",
-    "openenv>=0.2.0"
+    "openenv-core>=0.2.0"
 ]
 
 [project.scripts]
-server = "server.app:app"
+server = "server.app:main"
