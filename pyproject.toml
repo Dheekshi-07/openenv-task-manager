@@ -1,0 +1,13 @@
+[project]
+name = "openenv-task-manager"
+version = "0.1.0"
+description = "OpenEnv Task Manager environment"
+authors = [{ name = "Dheekshika" }]
+requires-python = ">=3.9"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "pyyaml"
+]
