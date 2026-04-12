@@ -1,17 +1,14 @@
 [project]
 name = "openenv-task-manager"
 version = "0.1.0"
-description = "OpenEnv Task Manager environment"
-authors = [{ name = "Dheekshika" }]
-requires-python = ">=3.10"
-
+description = "OpenEnv task manager"
+requires-python = ">=3.9"
 dependencies = [
     "fastapi",
     "uvicorn",
-    "pydantic",
-    "pyyaml",
-    "openenv-core>=0.2.0"
+    "pydantic"
 ]
 
-[project.scripts]
-server = "server.app:main"
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
