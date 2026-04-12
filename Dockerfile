@@ -1,6 +1,6 @@
-FROM python:3.10
+FROM python:3.10-slim
 
 WORKDIR /app
 COPY . /app
 
-CMD ["python", "inference.py"]
+CMD ["python3", "-u", "inference.py"]
